@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[4]:
+
+
+from pymatgen.ext.matproj import MPRester
+
+with MPRester("NrRTCZ9vfEUg8SJu") as m:
+
+    # Structure for material id
+    structure = m.get_structure_by_material_id("mp-12908")
+
+    # Dos for material id
+    dos = m.get_dos_by_material_id("mp-12908")
+
+    # Bandstructure for material id
+    bandstructure = m.get_bandstructure_by_material_id("mp-12908")
+
+
+# In[ ]:
+
+
+
+
